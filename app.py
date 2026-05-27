@@ -5,12 +5,6 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder
 import pickle
 import pandas as pd
 
-
-import sys
-import streamlit as st
-
-st.write(sys.version)
-
 #load the model
 model = tf.keras.models.load_model('models/model.h5')
 
