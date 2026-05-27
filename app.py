@@ -6,16 +6,16 @@ import pickle
 import pandas as pd
 
 #load the model
-model = tf.keras.models.load_model('models/model.h5')
+model = tf.keras.models.load_model('model.h5')
 
 # load all encoders and scaler
-with open('pickles/onehotencoder.pkl', 'rb') as f:
+with open('onehotencoder.pkl', 'rb') as f:
     onehotencoder = pickle.load(f)
 
-with open('pickles/labelencoder.pkl', 'rb') as f:
+with open('labelencoder.pkl', 'rb') as f:
     labelencoder = pickle.load(f)
 
-with open('pickles/scaler.pkl', 'rb') as f:
+with open('scaler.pkl', 'rb') as f:
     scaler = pickle.load(f)
 
 
