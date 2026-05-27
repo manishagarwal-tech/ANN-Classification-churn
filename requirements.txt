@@ -1,11 +1,6 @@
+streamlit
+tensorflow==2.21.0
 pandas
 numpy
 scikit-learn
-tensorboard
 matplotlib
-streamlit
-tensorflow==2.16.1
-ipykernel
-notebook
-tensorflow-metal
-jupyter
