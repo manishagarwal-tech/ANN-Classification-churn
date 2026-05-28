@@ -6,7 +6,10 @@ import pickle
 import pandas as pd
 
 #load the model
-model = tf.keras.models.load_model('model.h5')
+# model = tf.keras.models.load_model('model.h5')
+model = tf.keras.models.load_model("model.h5", compile=False)
+model.save("model.keras")
+model = tf.keras.models.load_model("model.keras", compile=False)
 
 # load all encoders and scaler
 with open('onehotencoder.pkl', 'rb') as f:
